@@ -1,0 +1,334 @@
+html {
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+    --bg-color:#f7faf7;
+    --logo-color:#046200;
+    --main-color:#43A047;
+    --text-color:#023c11;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.logo{
+    font-weight:900;
+    font-size:2rem;
+    color: var(--logo-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.li-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding-right: 2rem;
+        font-size: 6px;
+}
+.li-wrapper a{
+    padding: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    font-size:3rem;
+    
+}
+.li-wrapper a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+    /* box-shadow: 0 4px 15px var(--main-color); */
+
+}
+.menu-toggle {
+    display: none;
+
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--text-color);
+    margin: 3px 0;
+}
+/* main */
+.main{
+    padding: 6rem;
+    background-color: var(--bg-color);
+}
+.about-me{
+    padding: 0 6rem;
+}
+.about-me p{
+    padding: 1rem 0;
+    line-height: 1.5rem;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color:var(--text-color);
+
+}
+.h3{
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.audio {
+    display: inline-block;
+    
+    box-shadow: 0 4px 15px var(--main-color);
+    border-radius: 2rem;
+    margin: 2rem 6rem;    
+}
+   .my-stack {
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       height: 0;
+       background-color:var(--bg-color);
+       color: var(--main-color, white);
+       font-weight: 700;
+       font-size: 1.5rem;
+       padding: 0 2rem;
+       transition: height 1.5s ease;
+       overflow: hidden;
+   }
+
+   .my-stack.active {
+       height: 100vh;
+       padding: 10rem;
+
+       /* Full height when active */
+   }
+
+.my-stack h3{
+    margin: 1rem 5rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--main-color);
+        padding: 0 2rem;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 1rem;
+    padding: 0 9rem;
+}
+
+.table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.table img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+.footer1{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        box-shadow: 0 -2px 10px var(--text-color);
+        background-color: var(--bg-color);
+       
+}
+.footer{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+}
+.footer-wrapper{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding-right: 2rem;
+        
+}
+.footer-wrapper a{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+    color: var(--text-color);
+}
+.footer-wrapper img {
+    width: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-wrapper img:hover {
+    transform: rotate(360deg);
+    /* Rotate 360 degrees on hover */
+}
+.copy{
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0 0.0001rem;
+    color: var(--text-color);
+}
+#copyright{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+/* Media Queries for Mobile */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: flex;
+        padding-right: 3rem;
+        /* Adjust padding to avoid overflow */
+    }
+
+    .li-wrapper {
+        display: none;
+        /* Hide menu by default */
+        flex-direction: column;
+        /* Stack items vertically */
+        position: absolute;
+        /* Position absolutely */
+        background-color: rgb(218, 246, 223);
+        width: 70%;
+        /* Adjust width to avoid overflow */
+        top: 60px;
+        /* Position below header */
+        right: 0;
+        /* Align to the right */
+        z-index: 999;
+        /* Ensure it's on top */
+        border-radius: 30px;
+        transition: transform 0.3s ease;
+    }
+        .li-wrapper li {
+            padding: 20px 0;
+        }
+        .li-wrapper a{
+            font-size: 1rem;
+        }
+
+    .li-wrapper.show {
+        display: flex;
+        /* Show menu when active */
+    }
+        .menu-toggle {
+            display: flex;
+            padding-right: 80px;
+            /* Show menu toggle on mobile */
+        }
+
+    .main {
+        padding: 12rem 1rem;
+        /* Adjust padding */
+        overflow-x: hidden;
+        /* Prevent horizontal overflow */
+        margin: 0 ;
+        /* Reset margin */
+        width: 100%;
+        /* Ensure full width */
+    }
+
+    .about-me {
+        padding: 0 1rem;
+        /* Reduce padding */
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        padding: 1rem;
+        /* Reduce padding to avoid overflow */
+        margin: 0;
+        /* Reset margin */
+        
+    }
+
+    .audio {
+        margin: 2rem 0;
+        /* Center audio controls */
+    }
+
+    .footer1 {
+        width: 100%;
+        flex-direction: column;
+        /* Stack footer items vertically */
+        align-items: center;
+        /* Center footer items */
+    }
+}
+/* Styles for screens between 1024px and 1440px */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .header {
+        padding: 1.5rem;
+        /* Slightly increase header padding */
+    }
+
+    .li-wrapper {
+        padding-right: 2rem;
+        /* Adjust right padding */
+    }
+
+    .li-wrapper a {
+        font-size: 1.5rem;
+        /* Slightly smaller font size */
+    }
+
+    .main {
+        padding: 14rem 2rem;
+        
+        /* Adjust padding */
+    }
+
+    .about-me p {
+        font-size: 1.1rem;
+        /* Adjust font size for readability */
+    }
+
+    .audio {
+        margin: 2rem 4rem;
+        /* Adjust margin */
+    }
+
+    .my-stack h3 {
+        margin: 1rem 2rem;
+        /* Adjust margins */
+    }
+
+    .table {
+        padding: 0 4rem;
+        /* Increase padding for larger screens */
+    }
+
+    .footer1 {
+        padding: 1rem;
+        /* Increase footer padding */
+    }
+
+    .copy {
+        font-size: 1.2rem;
+        /* Adjust font size */
+    }
+}
+

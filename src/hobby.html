@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hobby</title>
     <script src="https://kit.fontawesome.com/e6a7a4572e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/hobby.css"/>
 </head>
 <body>
-    <header>
-        <span>BEZAWIT.S</span>
-        <nav>
-            <ul>
+    <header class="header">
+        <span class="logo">BEZAWIT.S</span>
+        <nav class="nav-wrapper">
+            <div class="menu-toggle" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="li-wrapper" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -20,55 +26,71 @@
         </nav>
     </header>
 
-    <section>
-        <h4>My Hobbies</h4>
-        <div>
-            
-            <h4>Drawing</h4>
+    <section class="section">
+        <!-- <h4>My Hobbies</h4> -->
+        <div class="hobby-wrapper">
+            <div class="hobby">
+                <h4>Drawing</h4>
                 <ol>
-                    <li>Pencil Sketching</li>
-                    <li>Watercolor</li>
-                    <li>Digital Art</li>
+                    <li>1,Pencil Sketching</li>
+                    <li>2,Watercolor</li>
+                    <li>3,Digital Art</li>
                 </ol>
+            </div>
+                
             <figure>
-                <video width="640" height="360" controls loop>
+                <img id="thumbnail1" src="./images/Screenshot 2024-12-13 191600.png" alt="Video Thumbnail" width="500" height="360"
+                    style="cursor: pointer;" onclick="toggleVideo('myVideo1')">
+                <video id="myVideo1" width="640" height="360" controls style="display: none;">
                     <source src="./video/video1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                    
+            
                 <figcaption>Drawing process video.</figcaption>
             </figure>
         </div>
-        <div>
-        
-            <h4>Watching Sports</h4>
-            <ol>
-                <li>Football</li>
-                <li>Athletics</li>
-            </ol>
-            <figure>
-                    <video width="640" height="360" controls loop>
-                        <source src="./video/video2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                <figcaption>10 Greatest Goals in football history</figcaption>
+        <div class="hobby-wrapper" >
+            <figure class="responsive-video">
+                <img id="thumbnail2" src="./images/Screenshot 2024-12-13 191539.png" alt="Video Thumbnail" width="500" height="360"
+                    style="cursor: pointer;" onclick="toggleVideo('myVideo2')">
+                <video id="myVideo2" width="640" height="360" controls style="display: none;">
+                    <source src="./video/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>10 Greatest Goals in football history.</figcaption>
             </figure>
+            <div class="hobby">
+                <h4>Watching Sports</h4>
+                <ol>
+                    <li>1,Football</li>
+                    <li>2,Athletics</li>
+                </ol>
+
+            </div>
+            
+            
         </div>
         
         
     </section>
-    <footer>
-        <div>&copy;2024 Bezawit Sebsbe. All rights reserved.</div>
+    <footer class="footer1">
+        <div class="footer">
+            <div class="copy" id="copyright">&copy;</div>
+            <div class="copy">2025 Bezawit Sebsbe. All rights reserved.</div>
+        </div>
         <diV>
-            <ul>
-                <li><a href="https://sebsbebezawit@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://github.com/bezawitsebsbe"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331"><i class="fa-brands fa-linkedin"></i></a>
+            <ul class="footer-wrapper">
+                <li><a href="https://sebsbebezawit@gmail.com"><img src="./images/gmail.49c66076.svg" alt="gmail"></a></li>
+                <li><a href="https://github.com/bezawitsebsbe"><img src="./images/github.feb228f9.svg" alt="github"></a>
                 </li>
-                <li><a href="https://leetcode.com/u/bezawitsebsbe/"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331"><img src="./images/linkedin.c304a414.svg"
+                            alt="linkedin"></a></li>
+                <li><a href="https://leetcode.com/u/bezawitsebsbe/"><img src="./images/download.png" alt="leetcode"
+                            width="45" style="border-radius: 10px;"></a></li>
             </ul>
         </diV>
     </footer>
+    <script src="./js/hobby.js"></script>
     
 
     

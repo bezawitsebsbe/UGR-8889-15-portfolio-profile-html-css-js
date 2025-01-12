@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aboutme</title>
     <script src="https://kit.fontawesome.com/e6a7a4572e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/aboutme.css"/>
 </head>
 <body>
-    <header>
-        <span>BEZAWIT.S</span>
-        <nav>
-            <ul>
+    <header class="header">
+        <span class="logo">BEZAWIT.S</span>
+        <nav class="nav-wrapper">
+            <div class="menu-toggle" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="li-wrapper" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -19,9 +25,9 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <article>
-            <h3>About me</h3>
+    <main class="main">
+        <article class="about-me">
+            <h3 class="h3">About me</h3>
             <p>I am Bezawit, a 21 year old Software Engineering student at Addis Ababa University.
                 I have developed a skill set in various programming languages and frameworks, including React, JavaScript, Nodejs,Nextjs
                 and CSS. These tools have allowed me to bring my ideas to life, building interactive and dynamic web applications.
@@ -33,14 +39,15 @@
             tech community. Thank you for visiting my portfolio!</p>
 
         </article>
-        <div>
+        <div class="audio">
             <audio controls>
                 <source src="./audio/audio.mp3" type="audio/mpeg">
+                
             </audio>
         </div>
-        <section>
-            <h3>My Stack</h3>
-            <table>
+        <section class="my-stack" id="stackSection">
+            <h3 >My Stack</h3>
+            <table class="table">
                 <tbody>
                     <tr>
                         <td><img src="./images/html.c1bb84e0.svg" alt="htmllogo"></td>
@@ -62,18 +69,20 @@
         </section>
     </main>
     
-    <footer>
-        <div>&copy;2024 Bezawit Sebsbe. All rights reserved.</div>
+    <footer class="footer1">
+        <div class="footer">
+            <div class="copy" id="copyright">&copy;</div>
+            <div class="copy">2025 Bezawit Sebsbe. All rights reserved.</div>
+        </div>
         <diV>
-            <ul>
-                <li><a href="https://sebsbebezawit@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://github.com/bezawitsebsbe"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-                <li><a href="https://leetcode.com/u/bezawitsebsbe/"><i class="fa-solid fa-code"></i></a></li>
+            <ul class="footer-wrapper">
+                <li><a href="https://sebsbebezawit@gmail.com"><img src="./images/gmail.49c66076.svg" alt="gmail"></a></li>
+                <li><a href="https://github.com/bezawitsebsbe"><img src="./images/github.feb228f9.svg" alt="github"></a></li>
+                <li><a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331"><img src="./images/linkedin.c304a414.svg" alt="linkedin"></a></li>
+                <li><a href="https://leetcode.com/u/bezawitsebsbe/"><img src="./images/download.png" alt="leetcode" width="45" style="border-radius: 10px;"></a></li>
             </ul>
         </diV>
     </footer>
-    
+    <script src="./js/aboutme.js"></script>
 </body>
 </html>

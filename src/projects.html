@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
         <script src="https://kit.fontawesome.com/e6a7a4572e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/projects.css"/>
 </head>
 <body>
-    <header>
-        <span>BEZAWIT.S</span>
-        <nav>
-            <ul>
+    <header class="header">
+        <span class="logo">BEZAWIT.S</span>
+        <nav class="nav-wrapper">
+            <div class="menu-toggle" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="li-wrapper" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -19,7 +25,7 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="main-wrapper">
         <h2>My Projects</h2>
         <div class="projects-container">
             <div class="project">
@@ -45,21 +51,26 @@
             
         </div>
     </section>
-    <footer>
-        <div>&copy;2024 Bezawit Sebsbe. All rights reserved.</div>
+    <footer class="footer1">
+        <div class="footer">
+            <div class="copy" id="copyright">&copy;</div>
+            <div class="copy">2025 Bezawit Sebsbe. All rights reserved.</div>
+        </div>
         <diV>
-            <ul>
-                <li><a href="https://sebsbebezawit@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://github.com/bezawitsebsbe"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331"><i class="fa-brands fa-linkedin"></i></a>
+            <ul class="footer-wrapper">
+                <li><a href="https://sebsbebezawit@gmail.com"><img src="./images/gmail.49c66076.svg" alt="gmail"></a></li>
+                <li><a href="https://github.com/bezawitsebsbe"><img src="./images/github.feb228f9.svg" alt="github"></a>
                 </li>
-                <li><a href="https://leetcode.com/u/bezawitsebsbe/"><i class="fa-solid fa-code"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331"><img src="./images/linkedin.c304a414.svg"
+                            alt="linkedin"></a></li>
+                <li><a href="https://leetcode.com/u/bezawitsebsbe/"><img src="./images/download.png" alt="leetcode"
+                            width="45" style="border-radius: 10px;"></a></li>
             </ul>
         </diV>
     </footer>
 
 
 
-    
+    <script src="./js/projects.js"></script>
 </body>
 </html>
