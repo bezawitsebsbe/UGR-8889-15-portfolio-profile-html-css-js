@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact me</title>
+    <link rel="stylesheet" href="./css/contactme.css"/>
 </head>
 <body>
-    <header>
-        <span>BEZAWIT.S</span>
-        <nav>
-            <ul>
+    <header class="header">
+        <span class="logo">BEZAWIT.S</span>
+        <nav class="nav-wrapper">
+            <div class="menu-toggle" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="li-wrapper" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -18,19 +24,47 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="contact-wrapper">
         <h2>Want to Contact me?</h2>
         <ul>
-            <li><img src="./images/gmail.49c66076.svg" alt="gmaillogo">G-mail</li>
-            <li><img src="./images/Telegram_(software)-Logo.wine_batcheditor_fotor.png" alt="telegramlogo">Telegram</li>
-            <li><img src="./images/linkedin.c304a414.svg" alt="linkdinlogo">Linkdin</li>
-            <li><img src="./images/github.feb228f9.svg" alt="githublogo">Github</li>
+            <!-- <li class="contact-info"><img src="./images/gmail.49c66076.svg" alt="gmaillogo" class="profile-image"><span class="email">G-mail</span></li> -->
+            <!-- <li class="contact-info"><img src="./images/Telegram_(software)-Logo.wine_batcheditor_fotor.png" alt="telegramlogo"  class="profile-image"><span class="email">Telegram</span></li>
+            <li class="contact-info"><img src="./images/linkedin.c304a414.svg" alt="linkdinlogo" class="profile-image"><span class="email"  >Linkdin</span></li>
+            <li class="contact-info"><img src="./images/github.feb228f9.svg" alt="githublogo"   class="profile-image"><span class="email">Github</span></li> -->
+            <li class="contact-info">
+                <a href="https://sebsbebezawit@gmail.com" class="contact-link">
+                    <img src="./images/gmail.49c66076.svg" alt="gmaillogo" class="profile-image">
+                    <span class="email">G-mail</span>
+                </a>
+            </li>
+            <li class="contact-info">
+                <a href="https://t.me/Bezzz2323" class="contact-link" target="_blank">
+                    <img src="./images/Telegram_(software)-Logo.wine_batcheditor_fotor.png" alt="telegramlogo"
+                        class="profile-image">
+                    <span class="email">Telegram</span>
+                </a>
+            </li>
+            <li class="contact-info">
+                <a href="https://www.linkedin.com/in/bezawit-sebsbe-b5ba02331" class="contact-link" target="_blank">
+                    <img src="./images/linkedin.c304a414.svg" alt="linkdinlogo" class="profile-image">
+                    <span class="email">LinkedIn</span>
+                </a>
+            </li>
+            <li class="contact-info">
+                <a href="https://github.com/bezawitsebsbe" class="contact-link" target="_blank">
+                    <img src="./images/github.feb228f9.svg" alt="githublogo" class="profile-image">
+                    <span class="email">GitHub</span>
+                </a>
+            </li>
         </ul>
     </section>
-    <footer>
-        <div>&copy;2024 Bezawit Sebsbe. All rights reserved.</div>
-
+    <footer class="footer1">
+        <div class="footer">
+            <div class="copy" id="copyright">&copy;</div>
+            <div class="copy">2025 Bezawit Sebsbe. All rights reserved.</div>
+        </div>
     </footer>
+    <script src="./js/contactme.js"></script>
     
 </body>
 </html>
